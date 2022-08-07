@@ -1,0 +1,86 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.antenna {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.astronaut {
+  width: 32px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.clock {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.diagram {
+  width: 32px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.mail {
+  width: 43px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.smartphone {
+  width: 20px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.twitter {
+  width: 32px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.facebook {
+  width: 32px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.Logo1 {
+  width: 57px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.Logo2 {
+  width: 57px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.Logo3 {
+  width: 57px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.Logo4 {
+  width: 57px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.Logo5 {
+  width: 57px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.Logo6 {
+  width: 57px;
+  height: 32px;
+  background-position: -288px -48px;
+}
+

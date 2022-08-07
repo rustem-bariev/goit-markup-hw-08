@@ -1,0 +1,23 @@
+.contact__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+    
+  .contact__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    
+    transition: color var(--main-anim);
+  }
+  
+  .contact__icon{
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}

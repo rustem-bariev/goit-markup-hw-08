@@ -1,0 +1,28 @@
+.client__list{
+    --card-item:6
+    }
+  
+  .client__link{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 92px;
+    border: 1px solid var(--color-social-icon);
+    border-radius: 4px;
+    color: var(--color-social-icon);
+  
+    transition: border-color var(--main-anim), color var(--main-anim);
+    }
+
+    .client__link:hover,
+    .client__link:focus{
+    color: var(--color-main-blue);
+    border-color: var(--color-main-blue);
+    }
+
+    .client__icon{
+    fill: currentColor;
+    }
+  
+
+  

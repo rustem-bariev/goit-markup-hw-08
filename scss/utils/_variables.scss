@@ -1,0 +1,29 @@
+:root {
+    /* color */
+    --color-main-blue: #2196f3;
+    --color-grey-text: #757575;
+    --color-black-text: #212121;
+    --color-white-text: #ffffff;
+    --color-grey-footer-text: rgba(255, 255, 255, 0.6);
+    --color-footer-icon:rgba(255, 255, 255, 0.1);
+    --color-footer-form:rgba(255, 255, 255, 0.3);
+    --footer-form-filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    --color-modal-massage:rgba(117, 117, 117, 0.5);
+    --color-bg-footer:rgba(47, 48, 58, 0.4);
+    --color-grey-bgn: #2f303a;
+    --color-grey-button: #f5f4fa;
+    --color-logo-black: #000000;
+    --color-social-icon:#AFB1B8;
+    --color-backdrop:rgba(0, 0, 0, 0.2);
+    --bg-overlay:rgba(33, 150, 243, 0.9);
+    --about-overlay:rgba(47, 48, 58, 0.8);
+    /* Card-set */
+    --main-card-gap:30px;
+    --card-item:3;
+    /* Animation */
+    --main-anim:250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --slow-anim:650ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* font */
+    --main-font-family: 'Roboto', sans-serif;
+    --second-font-family: 'Raleway', sans-serif;
+  }

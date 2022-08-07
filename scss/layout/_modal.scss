@@ -1,0 +1,175 @@
+.modal__backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  
+    width: 100%;
+    height: 100%;
+  
+    transition: opacity var(--slow-anim), visibility var(--slow-anim) ;
+    background-color: var(--color-backdrop);
+  }
+  .modal__backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .modal__backdrop.is-hidden .modal{
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scaleX(0.3);
+  }
+  .modal{
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%) scaleX(1);
+    width: 100%;
+    max-width: 530px;
+    height: 580px;
+    background: var(--color-white-text);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--slow-anim) , opacity var(--slow-anim);
+
+    &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--main-anim);
+  }
+  &__btn:hover,
+  &__btn:focus{
+    fill: var(--color-main-blue);
+    border-color: var(--color-main-blue);
+  }
+  &__form{
+    text-align: center;
+  }
+  &__title{
+    display: block;
+    margin-bottom: 12px;
+  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    color:var(--color-black-text);
+  }
+  &__form-group{
+    margin-bottom: 20px;
+  }
+  &__label{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  }
+  &__label:last-child{
+    margin-bottom: 0;
+  }
+  &__type{
+    text-align: left;
+    margin-bottom: 4px;
+  
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  } 
+  &__form-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill var(--main-anim);
+  }
+  &__input,
+  &__message{
+    
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    background-color: transparent;
+   
+  }
+  &__input{
+    transition: border-color var(--main-anim);
+    padding: 11px;
+    padding-left: 40px;
+    height: 40px;
+  }
+  .modal__input:hover + .modal__form-icon,
+  .modal__input:focus + .modal__form-icon {
+    fill: var(--color-main-blue);
+  }
+  &__container{
+    position: relative;
+  }
+  &__effect:hover,
+  &__effect:focus{
+    fill: var(--color-main-blue);
+    border-color: var(--color-main-blue);
+  }
+  &__message:hover,
+  &__message:focus{
+    border-color: var(--color-main-blue);
+  }
+  &__message{
+    padding: 10px;
+    height: 120px;
+    resize: none;
+    transition: border-color var(--main-anim);
+  }
+  &__message::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  
+    color: var(--color-modal-massage);
+  }
+  &__wrap{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .modal__check:checked + .modal__check-icon .modal__icon-uncheck {
+    opacity: 0;
+    transition: opacity var(--main-anim);
+  }
+  .modal__check:hover + .modal__check-icon .modal__icon-uncheck,
+  .modal__check:focus + .modal__check-icon .modal__icon-uncheck {
+    fill: var(--color-main-blue);
+    transition: opacity var(--main-anim);
+  }
+  .modal__check:checked + .modal__check-icon .modal__icon-check {
+    opacity: 1;
+  }
+  &__icon-check{
+    opacity: 0;
+    transition: opacity var(--main-anim);
+  }
+  &__icon-uncheck{
+    transition: fill var(--main-anim);
+  }
+  &__check-text{
+    user-select: none;
+  }
+  &__check-link{
+    color: var(--color-main-blue);
+  }
+  }
+  

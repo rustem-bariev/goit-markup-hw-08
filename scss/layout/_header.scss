@@ -1,12 +1,28 @@
 .header {
     border-bottom: 1px solid #ececec;
   
-  
   &__container{
     display: flex;
     align-items: center;
+    margin-left: 0;
+    @include mq(tab) {margin-left: auto;}
   }
   
   & .logo {
-    margin-right: 93px;
+    
+    margin-right: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    @include mq(tab) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    }
+
+    @include mq(desk) {
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
   }}

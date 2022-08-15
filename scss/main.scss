@@ -1,6 +1,7 @@
 // Utils styles
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixin';
 // Base styles
 @import './base/base';
 @import './base/reset';
@@ -14,6 +15,7 @@
 @import './components/link-effect';
 @import './components/contact';
 @import './components/product-btn';
+@import './components/mobile-menu';
 // Layout styles
 @import './layout/header';
 @import './layout/nav';

@@ -9,9 +9,24 @@
   }
   
   .footer__container{
-    display: flex;
-    align-items: baseline;
-    gap: 70px;
+    text-align: center;
+
+    @include mq(desk){
+      display: flex;
+      align-items: baseline;
+      gap: 70px;
+    text-align: left;}
+    
+  }
+  .footer__tablet-style{
+    @include mq(tab) {
+      display: flex;
+      align-items: baseline;
+    }
+    
+    @include mq(desk) {
+      gap: 70px;
+    }
   }
   
   .footer__list{
@@ -23,6 +38,9 @@
   .footer__address-style {
     font-style: inherit;
     color: var(--color-grey-footer-text);
+    margin-bottom: 60px;
+
+    @include mq(desk) {margin-bottom: 0;}
   }
   
   .footer__address-link {
@@ -36,6 +54,7 @@
   }
   
   .footer__text{
+    display: block;
     font-weight: 700;
     font-size: 14px;
     line-height:calc(16 / 14);
@@ -48,31 +67,49 @@
     background-color:var(--color-footer-icon);
     color: var(--color-white-text);
   }
+
+  .footer__icons{
+    @include mq(mob-only){
+    margin-bottom: 60px;}
+
+    @include mq(tab-only){
+    margin-left: auto;}
+
+
+  }
   
   .footer__form-container{
-  margin-left: auto;
+    @include mq(desk){  margin-left: auto;
+}
   }
   
   .footer__form{
+    @include mq(tab-only){  
+    display: flex;
+    flex-direction: column;
+    }
+    @include mq(desk){ 
     display: flex;
     align-items: flex-end;
-    gap: 12px;
+    gap: 12px;}
   }
   
   .footer__label{
     font-size: 16px;
     line-height: calc(20 / 16);
     color: var(--color-grey-footer-text);
-    display: flex;
-    flex-direction: column;
+    @include mq(desk){   display: flex;
+     flex-direction: column;}
+  
   }
   
   .footer__input{
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
   
-    width: 360px;
+    width: 450px;
     padding: 15px;
+    margin-bottom: 20px;
     color: var(--color-white-text);
     background-color: transparent;
     border: 1px solid var(--color-footer-form);
@@ -80,6 +117,9 @@
     border-radius: 4px;
     outline: transparent;
     transition: border-color var(--main-anim);
+
+    @include mq(desk) {width: 358px;
+    margin-bottom: 0;}
   }
   
   .footer__input:hover,

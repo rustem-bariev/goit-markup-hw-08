@@ -2,12 +2,15 @@
     display: flex;
     align-items: center;
   
-  
   &__list {
     display: flex;
     align-items: center;
     gap: 50px;
     color: var(--color-black-text);
+
+    @include mq(mob-only) {
+      display: none;
+    }
   }
   
   &__link{

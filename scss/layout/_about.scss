@@ -1,6 +1,9 @@
 .about{
+  display: none;
     padding-top: 0;
   
+  @include mq(desk){
+    display: block;
   &__overlay{
     display: flex;
     align-items: center;
@@ -26,4 +29,6 @@
     font-weight: 700;
     line-height: calc(16 / 14);
     text-transform: uppercase;
-  }}
+  }
+  
+}}

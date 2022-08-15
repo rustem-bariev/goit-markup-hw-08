@@ -1,6 +1,11 @@
     .section{
-    padding-top: 94px ;
-    padding-bottom: 94px ;
+    padding-top: 60px ;
+    padding-bottom: 60px ;
+
+    @include mq(desk) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     }
     .section-title {
     margin-bottom: 50px;
@@ -8,8 +13,13 @@
   
     font-family: var(--main-font-family);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+
     letter-spacing: 0.03em;
     color: var(--color-black-text);
+    font-size: 28px;
+    line-height: calc(32 / 28);
+
+    @include mq(desk) {    
+    font-size: 36px;
+    line-height: calc(42 / 36);}
     }

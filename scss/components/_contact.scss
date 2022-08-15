@@ -1,9 +1,9 @@
 .contact__list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 50px;
-    
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+
   .contact__link {
     display: flex;
     align-items: center;
@@ -14,10 +14,24 @@
     letter-spacing: 0.02em;
     
     transition: color var(--main-anim);
+
+    @include mq(tab-only) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
   }
-  
+    
   .contact__icon{
     fill: currentColor;
     margin-right: 10px;
+  }
+
+  @include mq(mob-only) {
+  display: none;
+  }
+  @include mq(tab-only) {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
   }
 }

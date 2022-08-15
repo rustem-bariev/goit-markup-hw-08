@@ -24,7 +24,12 @@
   
 .product__btn-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
+    justify-content:flex-start;
     margin-bottom: 50px;
+
+    @include mq(tab) {
+      justify-content: center;
+    }
 }

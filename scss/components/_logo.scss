@@ -1,7 +1,8 @@
 .logo {
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: var(--color-main-blue);
     font-family: var(--second-font-family);
@@ -13,5 +14,10 @@
   
   &--mode-white {
     color: var(--color-white-text);
+  }
+
+  @include mq(desk) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
 }

@@ -1,15 +1,21 @@
 .team {
   background-color: var(--color-grey-button);
 
-  &__list {
-    --card-item:4;
+    &__list {
+    --card-item:1;
+
+    @include mq(tab) {--card-item:2;}
+    @include mq(desk) {--card-item:4;}
+
     }
-    
     &__item {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
       background-color: var(--color-white-text);
       border-radius: 0px 0px 4px 4px;
+    }
+    &__img{
+      width: 100%;
     }
     
     &__box {

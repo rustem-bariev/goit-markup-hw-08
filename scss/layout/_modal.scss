@@ -26,12 +26,22 @@
     left: 50%; 
     transform: translate(-50%, -50%) scaleX(1);
     width: 100%;
-    max-width: 530px;
-    height: 580px;
+    max-width: 450px;
+    height: 609px;
     background: var(--color-white-text);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--slow-anim) , opacity var(--slow-anim);
+
+    @include mq(desk) {max-width: 528px ;
+    height: 581px;}
+    
+    &__main-text{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.01em;
+    }
 
     &__btn{
     display: flex;
@@ -63,8 +73,10 @@
   
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     color:var(--color-black-text);
+
+    @include mq(desk) {line-height: calc(23 / 20);}
   }
   &__form-group{
     margin-bottom: 20px;
@@ -80,10 +92,6 @@
   &__type{
     text-align: left;
     margin-bottom: 4px;
-  
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
   } 
   &__form-icon{
     position: absolute;
@@ -131,12 +139,16 @@
     transition: border-color var(--main-anim);
   }
   &__message::placeholder{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-weight: 400;  
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
-  
     color: var(--color-modal-massage);
+
+    @include mq(desk) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
   }
   &__wrap{
     display: inline-flex;
@@ -166,7 +178,13 @@
     transition: fill var(--main-anim);
   }
   &__check-text{
+    letter-spacing: 0.03em;
     user-select: none;
+
+    @include mq(desk) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
   &__check-link{
     color: var(--color-main-blue);

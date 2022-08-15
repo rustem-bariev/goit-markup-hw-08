@@ -1,8 +1,17 @@
+
 .description__list{
-  --card-item:4 ;
+--card-item:1;
+
+@include mq(tab) {
+  --card-item:2;
+}
+@include mq(desk) {
+  --card-item:4;
+}
 }
 
 .description__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -10,7 +19,9 @@
   text-transform: uppercase;
   color: var(--color-black-text);
 }
-
+.description__text{
+  text-align: left;
+}
 .description__icon-block{
   display: flex;
   align-items: center;

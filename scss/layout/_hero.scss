@@ -6,17 +6,37 @@
     margin-right: auto;
 
     background-color:var(--color-bg-footer);
-    background-image: 
-    linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)),url(../images/Hero-section/Img.jpg);
+   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
+     background-image: 
+    linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)),url(../images/hero/hero-@1x_mb.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { background-image: linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)), url(../images/hero/hero-@2x_mb.jpg);
+    }
+
+
+    @include mq(tab) {background-image: linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)), url(../images/hero/hero-@1x_tb.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { background-image: linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)), url(../images/hero/hero-@2x_tb.jpg);
+    }
+    }
     
-  @include mq(desk) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+    @include mq(desk) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)), url(../images/hero/hero-@1x_desk.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) { background-image: linear-gradient(to top, var(--color-bg-footer),var(--color-bg-footer)), url(../images/hero/hero-@2x_desk.jpg);}
+    }
   
   &__title {
     margin-left: auto;

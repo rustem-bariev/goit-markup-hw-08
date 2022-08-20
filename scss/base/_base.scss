@@ -5,3 +5,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-grey-text);
 }
+
+body.modal-open{
+  overflow: hidden;
+}

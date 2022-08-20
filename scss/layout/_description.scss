@@ -1,6 +1,5 @@
 
 .description__list{
---card-item:1;
 
 @include mq(tab) {
   --card-item:2;
@@ -11,13 +10,14 @@
 }
 
 .description__title {
-  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-black-text);
+
+  @include mq(mob-only) {text-align: center;}
 }
 .description__text{
   text-align: left;

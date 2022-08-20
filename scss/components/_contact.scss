@@ -16,6 +16,8 @@
     transition: color var(--main-anim);
 
     @include mq(tab-only) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
     padding-top: 5px;
     padding-bottom: 5px;
     }
